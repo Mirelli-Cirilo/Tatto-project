@@ -1,0 +1,51 @@
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    background: linear-gradient(90deg, #5c5d5e 0%, #424344 43%, #101011 100%);
+}
+
+.header-bar a{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+
+
+label {
+    padding-top: 10px !important;
+    display: block;
+    color: rgb(247, 244, 244);
+}
+
+.card-body {
+    padding: 7.9rem;
+    background-color: #272323;
+    
+}
+
+.button {
+    border: 1px solid #757575;
+    background-color: #FFF;
+    color: #4d5152;
+    padding: 15px;
+    
+    height: 80%;
+    margin-left: 56.3rem;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+input[type=text],
+input[type=password],
+textarea {
+    border: 1px solid #757575;
+    border-radius: 5px;
+    padding: 10px;
+    width: 90%;
+}

@@ -1,0 +1,58 @@
+.room__conversation {
+    margin-top: 1rem;
+    background-color: #6b6767;
+  }
+
+.thread {
+    border-left: 2px solid var(--color-dark);
+    padding-left: 1rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }  
+
+.thread__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }  
+
+.thread__author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+  }  
+
+.thread__details {
+    font-size: 1.3rem;
+  }  
+.room__comments {
+    
+    position: absolute;
+    z-index: 111;
+    
+    bottom: 0;
+    left: 8.7%;
+    right: 0;
+    background: transparent;
+  }  
+
+.room__comments > form > input {
+    resize: none;
+    background-color: #0c0b0b;
+    color: var(--color-light);
+    border: none;
+    outline: none;
+    border-radius: 0.7rem;
+    height: 4.5rem;
+    width: 98%;
+    font-size: 1.4rem;
+    font-weight: 500;
+    
+    
+  }
+  
+.room__comments > form > input::placeholder {
+    color: var(--color-light-gray);
+  }  
+

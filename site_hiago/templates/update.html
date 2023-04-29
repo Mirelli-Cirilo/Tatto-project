@@ -1,0 +1,29 @@
+{% extends 'main/main.html' %}
+
+{% load static %}
+
+{% block 'title' %}Editar{% endblock %}
+
+{% block 'head' %}
+    <link rel="stylesheet" href="{% static 'css/update.css' %}">
+{% endblock %}
+
+{% block 'body' %}
+    <div class="container">
+        <form action="{% url 'update' comment.id %}" method="POST">
+            {% csrf_token %}
+            <h1>Editar:</h1>
+
+            <input type="text" name="body" value="{{comment.body}}" class="message">
+            <br>
+            <input type="submit" class="btn btn-success" value="Enviar">
+            <a class="btn btn-danger" href="{% url 'home' %}">Cancelar</a>
+        </form>
+
+        
+        
+        
+    </div>
+
+    
+{% endblock %}

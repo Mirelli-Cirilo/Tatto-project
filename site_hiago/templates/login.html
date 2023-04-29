@@ -1,0 +1,61 @@
+{% extends 'main/main.html' %}
+{% load static %}
+
+{% block 'body' %}
+
+{% block 'head' %}
+ <link rel="stylesheet" href="{% static 'css/login_register.css' %}">
+{% endblock %}
+
+{% if page == 'login' %}
+
+<div class="header-bar">
+    <h1>Login</h1>
+</div>
+
+<div class="card-body">
+    <form method="POST" action="{% url 'login' %}">
+        {% csrf_token %}
+
+        <label >Usuário:</label>
+        <input type="text" name="username" placeholder="Nome de usuário....">
+
+        <label>Senha:</label>
+        <input type="password" name="password" placeholder="Senha...">
+
+        <input style="margin-left: 58.2rem; margin-top: 2rem;" class="button" type="submit" value="Entrar">
+    </form>
+
+    <p>Ainda não se registrou? <a href="{% url 'registro' %}">Registrar</a></p>
+    
+</div>
+
+{% else %}
+
+<div class="header-bar">
+    <h1>Registro</h1>
+</div>
+
+<div class="card-body">
+    <form method="POST" action="{% url 'registro' %}">
+        {% csrf_token %}
+        <label>{{form.username.label}}</label>
+        {{form.username}}
+
+        <label>{{form.password1.label}}</label>
+        {{form.password1}}
+
+        <label>{{form.password2.label}}</label>
+        {{form.password2}}
+        <input style="margin-top: 2rem;" class="button" type="submit" value="Registrar">
+    </form>
+
+    <p>Já se registrou? <a href="{% url 'login' %}">Login</a></p>
+    
+</div>
+
+
+
+{% endif %}
+
+{% endblock %}

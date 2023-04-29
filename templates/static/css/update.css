@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(44, 43, 43);
+}
+
+.message {
+    resize: none;
+    background-color: #0c0b0b;
+    color: var(--color-light);
+    border: none;
+    outline: none;
+    border-radius: 0.7rem;
+    height: 9rem;
+    width: 90.8%;
+    margin-top: 2rem;
+    padding: 1.3rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 2rem;
+  }
+
+.container{
+    margin: 10%;
+}  
+
