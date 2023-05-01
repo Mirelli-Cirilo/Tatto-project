@@ -1,7 +1,6 @@
 # Tatto-project
-Um site criado para o negócio de tatuagens do meu irmão, mostrando um pouco sobre ele e seu trabalho.
 
-```SOBRE: Projeto feito para o negócio de tatugem do meu irmão onde ele pode apresentar o seu trabalho.```
+```SOBRE: Projeto feito para o negócio de tatugem do meu irmão onde ele pode apresentar um pouco sobre seu trabalho e também sobre quem ele é.```
 
 TECNOLOGIAS: Python, Django, Html, Css.
 
