@@ -53,11 +53,12 @@ def registro(request):
         form = UserCreationForm(request.POST)
         if form.is_valid():
             form.save()
-            login(request, form)
-            return redirect('/')
+            login(request, request.user)
+            return redirect('home')
         else:
             messages.add_message(request, constants.ERROR, 'Nome de usuário ou senha inválidos.')
-
+            return redirect('registro')
+        
 def logoutPage(request):
     logout(request)
 
